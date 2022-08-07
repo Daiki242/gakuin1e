@@ -38,8 +38,8 @@
 }
 #nav-open span, #nav-open span:before, #nav-open span:after {
   position: absolute;
-  height: 1px;/*線の太さ*/
-  width: 25px;/*長さ*/
+  height: 1px;
+  width: 25px;
   border-radius: 3px;
   background: #eeeeee;
   display: block;
@@ -52,8 +52,6 @@
 #nav-open span:after {
   bottom: -16px;
 }
-
-/*閉じる用の薄黒箇所*/
 #nav-close {
   display: none;
   position: fixed;
@@ -66,8 +64,6 @@
   opacity: 0;
   transition: .3s ease-in-out;
 }
-
-/*メニューの中身*/
 #nav-content {
   overflow: auto;
   position: fixed;
@@ -75,7 +71,7 @@
   left: 0;
   z-index: 2147483647;
   width: 90%;
-  max-width: 330px;/*最大幅（お好みで調整を）*/
+  max-width: 330px;
   height: 100%;
   background: #333333;
   transition: .3s ease-in-out;
