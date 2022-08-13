@@ -207,6 +207,7 @@ main{
     padding-top: 250px;
     color: white;
     height: 100vh;
+    font-weight: bold;
   }
   main h2{
     font-family: sans-serif;
@@ -246,6 +247,7 @@ main{
     padding-top: 300px;
     color: white;
     height: 100vh;
+    font-weight: bold;
   }
   main h2{
     font-family: sans-serif;
