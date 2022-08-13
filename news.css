@@ -205,7 +205,6 @@ main{
     font-family: sans-serif;
     font-size: 50px;
     padding-top: 250px;
-    font-weight: normal;
     color: white;
     height: 100vh;
   }
@@ -245,7 +244,6 @@ main{
     font-family: sans-serif;
     font-size: 70px;
     padding-top: 300px;
-    font-weight: normal;
     color: white;
     height: 100vh;
   }
