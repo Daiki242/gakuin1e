@@ -180,12 +180,19 @@ header ul.menu-sumaho li a{
 main .none{
   height: 30px;
 }
+main{
+  text-align: center;
+}
 @media screen and (max-width:767.98px){
   main .none{
     height: 40px;
   }
   main .a{
     height: 1500px;
+    text-align: center;
+  }
+  main .e{
+    width: 100%;
   }
   main .e::before{
   background-image: url(1e-sumaho.jpg);
@@ -199,7 +206,7 @@ main .none{
   position: fixed;
   z-index: -1;
   }
-  main .e h2{
+  main .e h1{
     text-align: center;
     padding-top: 250px;
     font-family: sans-serif;
@@ -210,7 +217,8 @@ main .none{
   main .e p{
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
+    margin: 20%;
   }
 }
 @media screen and (min-width:768px){
@@ -218,7 +226,7 @@ main .none{
     height: 40px;
   }
   main .a{
-    height: 3000px;
+    height: 2000px;
   }
   main .e::before{
   background-image: url(1e-pc.jpg);
@@ -232,7 +240,7 @@ main .none{
   position: fixed;
   z-index: -1;
   }
-  main .e h2{
+  main .e h1{
     text-align: center;
     padding-top: 300px;
     font-family: sans-serif;
@@ -241,9 +249,9 @@ main .none{
     height: 100vh;
   }
   main .e p{
-    text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
+    width: 80%;
   }
 }
 
