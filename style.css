@@ -1,182 +1,688 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>【男子校で女装!?】早大学院1年E組文化祭企画「巫女天国」</title>
-    <meta name="Description" content="早大学院1年E組の文化祭企画である「巫女天国」のウェブサイトです。巫女に扮した学院生が縁結び神社の参拝客をご案内いたします。早稲田大学高等学院の文化祭“学院祭”にぜひお越しください。" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-	  <meta property="og:title" content="【男子校で女装!?】早大学院1年E組文化祭企画「巫女天国」" />
-  	<meta property="og:description" content="早大学院1年E組の文化祭企画である「巫女天国」のウェブサイトです。巫女に扮した学院生が縁結び神社の参拝客をご案内いたします。早稲田大学高等学院の文化祭“学院祭”にぜひお越しください。" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://gakuin1e.github.io/gakuin1e/" />
-    <meta property="og:image" content="logo-aikon.jpg" />
-    <meta property="og:site_name" content="【男子校で女装!?】早大学院1年E組文化祭企画「巫女天国」" />
-    <meta property="og:locale" content="ja_JP"  />
-    <meta name="google-site-verification" content="qD0Z700WSgfWL161ehWBf2OXkrL-cXnSMPWAJ_HWDjc" />
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-        <div class="menu">
-        <div id="nav-drawer">
-           <input id="nav-input" type="checkbox" class="nav-unshown">
-           <label id="nav-open" for="nav-input"><span></span></label>
-           <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-           <div id="nav-content">メニュー
-             <ul class="menu-sumaho">
-               <li>
-                 <a href="index.html">ホーム</a>
-               </li>
-               <li>
-                 <a href="1e.html">1年E組</a>
-               </li>
-               <li>
-                 <a href="news.html">ニュース</a>
-               </li>
-               <li>
-                 <a href="miko.html">“巫女”</a>
-               </li>
-             </ul>
-           </div>
-        </div>
-        <script>
-          $(function() {
-          $('#nav-content li a').on('click', function(event) {
-          $('#nav-input').prop('checked', false);
-  　　　　　});
-　　　　　　});
-　　　　　</script>
-        <div class="logo">
-          <a href="index.html"><img src="logo.jpg" alt="E組ロゴ"></a>
-        </div>
-     </div>
+*{
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width:768px) {
+   #nav-drawer {
+     display:none;
+   }
+}
+@media screen and (max-width:767.98px){
+  header {
+  padding:10px;
+  padding-bottom: 0px;
+  background: #333333;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+}
+}
+@media screen and (min-width:768px){
+  header{
 
-       <div class="div-menu-pc">
-         <ul class="menu-pc">
-           <li>
-            <a href="index.html">ホーム</a>
-           </li>
-           <li>
-             <a href="1e.html">1年E組</a>
-           </li>
-           <li>
-             <a href="news.html">ニュース</a>
-           </li>
-           <li>
-             <a href="miko.html">“巫女”</a>
-           </li>
-         </ul>
-       </div>
-   </header>
-   <main>
-     <h1>早稲田大学高等学院1年E組</h1>
-     <div class="none"></div>
-     <div class="img"></div>
-     <section class="gakuinsai">
-       <h2>学院祭</h2>
-       <p>本企画「巫女天国」は令和四年度早稲田大学高等学院1年E組の学院祭での企画のことである。巫女に扮した学院生が神社の参拝客をもてなします。</p>
-       <div class="keyakinamiki">
-         <img src="keyakinamiki.jpg" alt="欅並木">
-       </div>
-     </section>
-     <section class="concept">
-       <h2>CONCEPT</h2>
-       <h3 class="concept-title">女装による新時代への挑戦。</h3>
-       <section class="concept-1">
-         <div class="concept-p">
-           <p>男子校という閉塞的空間の中で男たちは何を思うか。薄墨色の監獄の中にその神社は秘かに佇む。出会いを求める者たちの往来が絶えないその神社を、人々は縁結び神社と呼ぶという。男の園に居を構えるその神社では、神に仕える巫女すらも男によって務められる。女装が秘める未知なる可能性に誰しもが惹きつけられることだろう。</p>
-        </div>
-        <div class="gakuin">
-          <img src="gakuin.jpg" alt="早稲田大学高等学院校舎">
-        </div>
-      </section>
-    </section>
-     <section class="about">
-       <h2>ABOUT</h2>
-       <p></p>
-       <section class="about-naiyou">
-         <h3>企画内容</h3>
-         <p>巫女天国は幻想的なライトアップと女装、そして先端技術が融合した先鋭的な縁結び神社です。妖しい光に照らし出された境内は、その全体がフォトスポットになっており、神事に励む巫女たちとの写真撮影も可能です。また神苑では、スマートフォンなどの端末を用いたデジタルおみくじを実施しております。それと同時に、当神社では学院1美しい巫女を決定するための人気投票をおこないます。一人一回の投票が可能ですので、ぜひご参加ください。</p>
-         <div class="kyousitu">
-           <img src="kyousitu.jpg" alt="E組教室3Dオブジェクト">
-         </div>
-       </section>
-       <div class="none-2"></div>
-       <section class="about-nittei">
-         <div class="nittei">
-           <h3>日程</h3>
-           <p>2022年　10月 8日（土） 10:00～16:00<br>
-           （入場は15:00まで）
-           <br>
-            2022年　10月 9日（日） 10:00～16:00<br>
-            （入場は15:00まで）</p>
-         　<a href="https://www.waseda.jp/school/shs/campus/gakuin-sai/">詳細はこちらから</a>
-       </div>
-      </section>
-       <section class="1e">
+  }
+}
+#nav-drawer {
+  position: relative;
+}
+.nav-unshown {
+  display:none;
+}
 
-       </section>
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 1px;
+  width: 25px;
+  border-radius: 3px;
+  background: #eeeeee;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+#nav-close {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2147483647;
+  width: 90%;
+  max-width: 330px;
+  height: 100%;
+  background: #333333;
+  transition: .3s ease-in-out;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 20px;
+  font-family: sans-serif;
+}
+header ul.menu-sumaho{
+  padding-top: 50px;
+}
+header ul.menu-sumaho li{
+  border-bottom: solid 1px #a9a9a9;
+  list-style: none;
+}
+header ul.menu-sumaho li a{
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+#nav-input:checked ~ #nav-close {
+  display: block;
+  opacity: .5;
+}
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+@media screen and (max-width:767.98px){
+  .menu{
+ display: flex;
+ display: -moz-flex;
+ display: -o-flex;
+ display: -webkit-flex;
+ display: -ms-flex;
+ flex-direction: row;
+ -moz-flex-direction: row;
+ -o-flex-direction: row;
+ -webkit-flex-direction: row;
+ -ms-flex-direction: row;
+ height: 30px;
+}
+}
+@media screen and (min-width:768px){
+  .menu{
+    display: none;
+  }
+}
+@media screen and (max-width:767.98px){
+  .logo{
+    display: block;
+    width: 100%;
+    margin-right: 50px;
+    text-align: center;
+}
+.logo img{
+  width: 40px;
+  height: 25px;
+}
+}
+@media screen and (min-width:768px){
+  .logo{
+    display: none;
+  }
+  .logo img{
+    display: none;
+  }
+}
+.nav-content{
+  background-color: #333333;
+}
+main{
+  text-align: center;
+}
+main h1{
+  display: none;
+}
+.none{
+  height: 30px;
+  background-color: black;
+}
+@media screen and (max-width:767.98px){
+  .div-menu-pc{
+    display: none;
+  }
+}
+@media screen and (min-width:768px){
+  header ul.menu-pc{
+    text-align: center;
+    background: #333333;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 15px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    position: fixed;
+  }
+  header ul.menu-pc li a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+}
+@media screen and (max-width:767.98px){
+  .img{
+  height: 0;
+  width: 100%;
+  background-image: url("herosumaho.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: calc(375 / 500 * 100%);
+  }
+  .gakuinsai h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #333333;
+    padding-top: 50px;
+    font-weight: 600;
+  }
+  .gakuinsai p{
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .keyakinamiki{
+    padding: 30px;
+    background-color: #333333;
+  }
+  .keyakinamiki img{
+    width: 80%;
+  }
+  .concept h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333333;
+    padding-top: 50px;
+  }
+  main h3{
+    padding-top: 30px;
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: block;
+    font-weight: normal;
+    padding: 10
+  }
+  .concept-p{
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gakuin{
+    background-color: #333333;
+  }
+  .gakuin img{
+    padding: 30px;
+    width: 80%;
+  }
+  .about h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333333;
+    padding-top: 50px;
+  }
+  .about p{
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kyousitu{
+    background-color: #333333;
+    padding: 30px;
+  }
+  .kyousitu img{
+    width: 80%;
+  }
+  .none-2{
+    height: 40px;
+  }
+  .about-nittei{
+    background-image: url(hasira.jpg);
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .nittei{
+    background-color: rgba(51, 51, 51, 0.5);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .nittei h3{
+    color: white;
+  }
+  .about .about-nittei p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+  }
+  .about .about-nittei a{
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+  .none-3{
+    height: 40px;
+  }
+  .news{
+    background-image: url(koudou-pc.jpg);
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .div-news{
+    background-color: rgba(220, 220, 220, 0.5);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .news h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+    padding-top: 50px;
+  }
+  .news p{
+    display: block;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+  }
+  .none-4{
+    height: 40px;
+  }
+}
+@media screen and (min-width:768px){
+  .img{
+  height: 0;
+  width: 100%;
+  background-image: url("heropc.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: calc(367.4 / 653.1 * 100%);
+  background-position: center;
+  }
+  .gakuinsai h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #333333;
+    padding-top: 80px;
+    font-weight: 600;
+  }
+  .gakuinsai p{
+    padding: 18px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .keyakinamiki{
+    padding: 30px;
+    background-color: #333333;
+  }
+  .keyakinamiki img{
+    width: 80%;
+  }
+  .concept h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #333333;
+    padding-top: 80px;
+  }
+  main h3{
+    padding-top: 30px;
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 30px;
+    display: block;
+    font-weight: normal;
+    padding: 20px;
+  }
+  .concept-p{
+    padding: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+  .gakuin{
+    background-color: #333333;
+  }
+  .gakuin img{
+    padding: 50px;
+    width: 80%;
+  }
+  .about h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #333333;
+    padding-top: 80px;
+  }
+  .about p{
+    padding: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+  .kyousitu{
+    background-color: #333333;
+    padding: 50px;
+  }
+  .kyousitu img{
+    width: 80%;
+  }
+  .none-2{
+    height: 80px;
+  }
+  .about-nittei{
+    background-image: url(hasira.jpg);
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .nittei{
+    background-color: rgba(51, 51, 51, 0.5);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .about-nittei h3{
+    padding-top: 80px;
+    color: white;
+  }
+  .about .about-nittei p{
+    padding: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+  }
+  .about .about-nittei a{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  .none-3{
+    height: 80px;
+  }
+  .news{
+    background-image: url(koudou-pc.jpg);
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .div-news{
+    background-color: rgba(220, 220, 220, 0.5);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .news h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .news p{
+    display: block;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .none-4{
+    height: 80px;
+  }
+}
 
-     </section>
-     <div class="none-3"></div>
-     <section class="news">
-       <div class="div-news">
-         <h2>NEWS</h2>
-         <a href="news.html">詳しく見る</a>
-         <p>・E組のロゴが決定(2022/08/08)</p>
-         <p>・Twitter・Instagramを開設(2022/07/21)</p>
-       </div>
-     </section>
-     <div class="none-4"></div>
-   </main>
-    <aside class="">
 
-    </aside>
-    <footer>
-      <div class="toiawase">
-        <h3>お問合せ</h3>
-        <a href="mailto:gakuin1etoiawase@gmail.com">お問合せはこちらから</a>
-      </div>
 
-      <hr>
-      <div class="access">
-          <h3>ACCESS</h3>
-          <p>〒177-0044</p>
-          <p>東京都練馬区上石神井３丁目３１−１</p>
-          <p>早稲田大学高等学院　1年E組</p>
-          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.792117489226!2d139.59114395031162!3d35.73133078008539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1b7755fe39%3A0x6cd8cd8452864528!2z5pep56iy55Sw5aSn5a2m6auY562J5a2m6Zmi44O75Lit5a2m6YOo!5e0!3m2!1sja!2sjp!4v1636898795338!5m2!1sja!2sjp" width="70%" height="300%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-      </div>
-     <hr>
-     <div class="sns">
-       <p>フォローする</p>
-       <ul class="sns_demo">
-         <div class="twitter">
-          <li>
-            <a href="https://twitter.com/gakuin2022_1E">
 
-              <img src="twitteriro.png" alt="Twitter" class="on">
-              <img src="twittersiro.png" alt="Twitter" class="off">
 
-            </a>
-          </li>
-        </div>
-        <div class="instagram">
-          <li>
-            <a href="https://www.instagram.com/20221e_gakuinsai/?igshid=YmMyMTA2M2Y%3D">
 
-              <img src="instagramiro.png" alt="Instagram" class="on">
-              <img src="instagramsiro.png" alt="Instagram" class="off">
 
-            </a>
-          </li>
-       </div>
-       </ul>
-     </div>
-     <hr>
-     <div class="copyright">
-       <p>© 2022 Daiki Inc. All Rights Reserved.</p>
-     </div>
-    </footer>
-  </body>
-</html>
+footer{
+  background-color: #333333;
+}
+@media screen and (max-width:767.98px){
+  footer .toiawase{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .toiawase h3{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  footer .toiawase a{
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    padding: 20px;
+  }
+  footer　.toiawase a:hover{
+    text-decoration: underline;
+  }
+  footer .access h3{
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+footer .access p{
+  color: white;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-align: center;
+}
+}
+@media screen and (min-width:768px){
+  footer　.toiawase{
+  }
+  footer .toiawase h3{
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  footer .toiawase a{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    padding: 20px;
+  }
+  footer .access h3{
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+footer .access p{
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center;
+}
+}
+footer .toiawase a:hover{
+  text-decoration: underline;
+}
+footer .access .map{
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (max-width:767.98px){
+.sns{
+    height: 130px;
+  }
+.sns p{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-family: sans-serif;
+}
+}
+@media screen and (min-width:768px){
+.sns{
+  height: 170px;
+}
+.sns p{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: sans-serif;
+}
+}
+hr {
+ height: 1px;
+ background-color: #a9a9a9;
+ width: 80%;
+ border: none;
+ margin-left: auto;
+ margin-right: auto;
+}
+footer ul.sns_demo{
+  margin: 0;
+   display: inline;
+   font-size: 0px;
+   display: flex;
+   justify-content: center;
+}
+footer ul.sns_demo li{
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100%/3);
+  margin: 0;
+}
+footer ul.sns_demo li a{
+  display: block;
+  max-width: 120px;
+  margin: 0 auto;
+}
+footer ul li a img{
+  width: 20px;
+}
+footer ul.sns_demo li img.on {
+  top: 0;
+  left: 0;
+  display: block;
+}
+footer ul.sns_demo li img.off {
+  transition: 0.5s all;
+  margin-top: -100px;
+  margin-left:0px;
+}
+footer ul.sns_demo li a:hover img {
+    opacity: 1;
+}
+footer ul.sns_demo li a:hover img.off {
+    opacity: 0;
+}
+@media screen and (max-width:767.98px){
+.twitter{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  }
+.twitter img{
+  width: 30px;
+}
+}
+@media screen and (min-width:768px){
+.twitter{
+  width: 50px;
+  height: 50px;
+  margin: 40px;
+  }
+.twitter img{
+  width: 50px;
+}
+}
+@media screen and (max-width:767.98px){
+.instagram{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  }
+.instagram img{
+  width: 30px;
+}
+}
+@media screen and (min-width:768px){
+.instagram{
+   width: 50px;
+   height: 50px;
+   margin: 40px;
+  }
+.instagram img{
+  width: 50px;
+}
+}
+footer .copyright{
+  padding: 20px;
+}
+footer .copyright p{
+  font-size: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
