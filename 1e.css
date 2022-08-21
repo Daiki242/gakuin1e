@@ -251,7 +251,8 @@ main{
   main .e p{
     color: white;
     font-size: 25px;
-    width: 80%;
+    text-align: center;
+    margin: 20%;
   }
 }
 
