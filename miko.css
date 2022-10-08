@@ -185,7 +185,7 @@ main{
     height: 40px;
   }
   main .a{
-    height: 3000px;
+    height: 2000px;
   }
   main .miko::before{
   background-image: url(miko-sumaho.jpg);
@@ -225,7 +225,7 @@ main{
     height: 40px;
   }
   main .a{
-    height: 4000px;
+    height: 2500px;
   }
   main .miko::before{
   background-image: url(miko-pc.jpg);
